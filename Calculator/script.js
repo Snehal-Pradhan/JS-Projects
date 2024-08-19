@@ -1,11 +1,11 @@
 const elements = document.querySelectorAll('.numPadButton');
 const contentPanel = document.querySelector('.contentPanel');
-console.log(elements);
+const clearButton = document.querySelector('#clearButton');
+const display = document.querySelector('.display');
 elements.forEach((button)=>{
     button.addEventListener('click',function(e){
-        console.log(e);
-        console.log(e.target);
         const newElement = document.createElement('div');
+        display.innerText += e.target.innerText;
         //styling
         newElement.style.backgroundColor="#1d2225";
         newElement.style.fontFamily="Roboto";
@@ -17,8 +17,12 @@ elements.forEach((button)=>{
         newElement.style.paddingRight ='2rem';
         newElement.style.color='#ffffff8f';
 
-
+        //
         newElement.innerText = e.target.innerText;
         contentPanel.appendChild(newElement);
     })
+})
+
+clearButton.addEventListener('click',()=>{
+    contentPanel.innerHTML='';
 })
