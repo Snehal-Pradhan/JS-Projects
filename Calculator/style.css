@@ -1,35 +1,39 @@
-
+body{
+    margin: 0;
+    padding: 0;
+}
 
 /*component basic background*/
 .panel{
+    background-color:#1d2225;
     display: flex;
-    height: 90vh;
-    margin:2px;
-   
+    height: 90vh;   
 }
 .historyPanel{  
-    margin: 2px;
+    border-radius: 0.5rem;
+    margin:  0.1rem;
     height: 100% -2px;
-    background-color: aqua; 
+    background-color: #2b3137;
     width:40%;
 }
 .activePanel{
     display: flex;
-    margin: 2px;
+    margin: 0.1rem;
     height: 100% -2px;
-    background-color: aqua; 
+    background-color:#24292d; 
     margin-right: 0px;
     width:60%;
+    box-shadow: inset 0px 0px 1rem #1d2225;
     align-items: center;
     justify-content: center;
 }
 .header{
+    background-color: #1d2225;
     height: 5vh;
-    margin:2px;
 }
 .footer{
+    background-color: #1d2225;
     height: 5vh;
-    margin:2px;
 }
 body >div{
     background-color: #212121;
@@ -44,8 +48,6 @@ body >div{
     box-shadow:0px 0px 2px #212121;
     border: 2px solid;
     
-}
-.numPad > div{
 }
 .display{
     background-color: beige;
