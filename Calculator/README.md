@@ -1,16 +1,19 @@
 # Calculator
 
-## Color Palette
 
-The project follows a specific color scheme for consistent design and branding. Below is a table illustrating the colors used.
+### Color Scheme Overview
 
-| Color          | Hex Code  | Preview |
-|----------------|-----------|---------|
-| **Dark Blue**  | `#0B2559` | ![#0B2559](https://via.placeholder.com/20/0B2559/000000?text=+) |
-| **Blue Gray**  | `#183B59` | ![#183B59](https://via.placeholder.com/20/183B59/000000?text=+) |
-| **Teal Gray**  | `#2A5159` | ![#2A5159](https://via.placeholder.com/20/2A5159/000000?text=+) |
-| **Dark Teal**  | `#327355` | ![#327355](https://via.placeholder.com/20/327355/000000?text=+) |
-| **Olive Green**| `#5C8C46` | ![#5C8C46](https://via.placeholder.com/20/5C8C46/000000?text=+) |
-| **Red**        | `#D93636` | ![#D93636](https://via.placeholder.com/20/D93636/000000?text=+) |
-| **Dark Red**   | `#A62934` | ![#A62934](https://via.placeholder.com/20/A62934/000000?text=+) |
 
+| **Color Purpose**                 | **Color Code** | **Color Preview**                                                                                  |
+| --------------------------------- | -------------- | -------------------------------------------------------------------------------------------------- |
+| **Primary Background Colors**     |                |                                                                                                    |
+| Dark Gray                         | `#1d2225`      | ![#1d2225](https://via.placeholder.com/20/1d2225?text=+)                                            |
+| Medium Dark Gray                  | `#2b3137`      | ![#2b3137](https://via.placeholder.com/20/2b3137?text=+)                                            |
+| Charcoal Gray                     | `#24292d`      | ![#24292d](https://via.placeholder.com/20/24292d?text=+)                                            |
+| **Panel & Button Shadows**        |                |                                                                                                    |
+| Deep Gray                         | `#212121`      | ![#212121](https://via.placeholder.com/20/212121?text=+)                                            |
+| **Component Backgrounds**         |                |                                                                                                    |
+| Light Beige                       | `#f5f5dc`      | ![#f5f5dc](https://via.placeholder.com/20/f5f5dc?text=+)                                            |
+| **Button and Interaction Colors** |                |                                                                                                    |
+| Grayish Tone (various shades)     | `grey`         | ![#808080](https://via.placeholder.com/20/808080?text=+)                                            |
+[See more details here](./info/Color-Schema.md)
