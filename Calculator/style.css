@@ -105,3 +105,41 @@ body >div{
     color:#ffffff9f;
     background-color: #2d3338 ;
 }
+.functionPanel{
+    height: 5%;
+    margin:1%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.functionPanel>button{
+    margin-right: 5px;
+    border-radius: 10px;
+    border: 2px rgba(255, 0, 0, 0.589) solid;
+    background-color: rgba(255, 0, 0, 0.078);
+    color:rgba(255, 0, 0, 0.589);
+    font-weight: 600;
+}
+
+.functionPanel>button:hover{
+    transform: scale(1.01);
+    background-color: rgba(255, 0, 0, 0.207);
+}
+.functionPanel>button:active{
+    transform: scale(1.01);
+    background-color: rgba(255, 190, 190, 0.071);
+}
+.contentPanel{
+    margin: 1%;
+    height: 92%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    width:5px;
+}
+::-webkit-scrollbar-thumb{
+    background: #ffffff8f;;
+    border-radius: 2px;
+}
+

@@ -1,5 +1,5 @@
 const elements = document.querySelectorAll('.numPadButton');
-const historyPanel = document.querySelector('.historyPanel');
+const contentPanel = document.querySelector('.contentPanel');
 console.log(elements);
 elements.forEach((button)=>{
     button.addEventListener('click',function(e){
@@ -19,6 +19,6 @@ elements.forEach((button)=>{
 
 
         newElement.innerText = e.target.innerText;
-        historyPanel.appendChild(newElement);
+        contentPanel.appendChild(newElement);
     })
 })
