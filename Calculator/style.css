@@ -95,3 +95,12 @@ body >div{
     background-color:  #1d2225;
     box-shadow: inset 0px 0px 2px   #0b0d0e;
 }
+.numPad > div > button:hover{
+    color:#ffffff9f;
+    background-color: #252b2f ;
+    transform: scale(1.03)
+}
+.numPad > div > button:active{
+    color:#ffffff9f;
+    background-color: #2d3338 ;
+}
