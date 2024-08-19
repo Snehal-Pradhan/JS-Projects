@@ -11,7 +11,7 @@
     margin: 2px;
     height: 100% -2px;
     background-color: aqua; 
-    width:30%;
+    width:40%;
 }
 .activePanel{
     display: flex;
@@ -19,7 +19,7 @@
     height: 100% -2px;
     background-color: aqua; 
     margin-right: 0px;
-    width:70%;
+    width:60%;
     align-items: center;
     justify-content: center;
 }
@@ -38,9 +38,26 @@ body >div{
 /* styling buttons */
 
 .numPad{
-    background-color:blue;
+    display: grid;
+    grid-template-columns:6rem 6rem 6rem 6rem ;
+    grid-template-rows:6rem 4rem 4rem 4rem 4rem 4rem;
+    box-shadow:0px 0px 2px #212121;
+    border: 2px solid;
+    
 }
-.numPad > button{
-    height:2rem;
-    width:2rem;
+.numPad > div{
+}
+.display{
+    background-color: beige;
+    grid-column: 1 / 5;
+    grid-row:1/1 ;
+    box-shadow: inset 0px 0px 2px #212121;
+}
+.numPad > div > button{
+    border-radius: 0;
+    border-width:  0.05rem;
+    border: none;
+    height: 100%;
+    width: 100%;
+    box-shadow: inset 0px 0px 2px grey;
 }
