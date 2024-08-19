@@ -1,13 +1,23 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
+
+
 body{
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
 }
 
 /*component basic background*/
 .panel{
     background-color:#1d2225;
     display: flex;
-    height: 90vh;   
+    height: 80vh;   
 }
 .historyPanel{  
     border-radius: 0.5rem;
@@ -23,17 +33,36 @@ body{
     background-color:#24292d; 
     margin-right: 0px;
     width:60%;
+    border-radius: 0.5rem;
     box-shadow: inset 0px 0px 1rem #1d2225;
     align-items: center;
     justify-content: center;
 }
 .header{
+    color:gray;
+    display: flex;
+    align-items: center;
+    justify-content: left;
     background-color: #1d2225;
-    height: 5vh;
+    font-weight: 900;
+    font-size: 2rem;
+    height: 15vh;
+}
+.header >span{
+    padding-left: 7rem;
 }
 .footer{
+    color:grey;
+    display: flex;
+    justify-content: right;
+    align-items:center ;
     background-color: #1d2225;
     height: 5vh;
+    font-weight: 900;
+    font-size: 0.7rem;
+}
+.footer>span{
+    padding-right: 1rem;
 }
 body >div{
     background-color: #212121;
@@ -50,16 +79,19 @@ body >div{
     
 }
 .display{
-    background-color: beige;
+    background-color: #2b3137;
     grid-column: 1 / 5;
     grid-row:1/1 ;
     box-shadow: inset 0px 0px 2px #212121;
 }
 .numPad > div > button{
+    font-family: "Roboto", sans-serif;;
+    color:#ffffff;
     border-radius: 0;
     border-width:  0.05rem;
     border: none;
     height: 100%;
     width: 100%;
+    background-color:  #1d2225;
     box-shadow: inset 0px 0px 2px grey;
 }
