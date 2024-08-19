@@ -1,0 +1,46 @@
+
+
+/*component basic background*/
+.panel{
+    display: flex;
+    height: 90vh;
+    margin:2px;
+   
+}
+.historyPanel{  
+    margin: 2px;
+    height: 100% -2px;
+    background-color: aqua; 
+    width:30%;
+}
+.activePanel{
+    display: flex;
+    margin: 2px;
+    height: 100% -2px;
+    background-color: aqua; 
+    margin-right: 0px;
+    width:70%;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    height: 5vh;
+    margin:2px;
+}
+.footer{
+    height: 5vh;
+    margin:2px;
+}
+body >div{
+    background-color: #212121;
+}
+
+/* styling buttons */
+
+.numPad{
+    background-color:blue;
+}
+.numPad > button{
+    height:2rem;
+    width:2rem;
+}
