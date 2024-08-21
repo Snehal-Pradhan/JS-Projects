@@ -80,11 +80,18 @@ body >div{
     
 }
 .display{
-    background-color: #2b3137;
+    overflow: scroll;
+    font-size: 50px;
     grid-column: 1 / 5;
     grid-row:1/1 ;
-    box-shadow: inset 0px 0px 2px #212121;
-    
+
+}
+.display::-webkit-scrollbar-thumb{
+    background-color: #ffffff;
+    width: 1px;
+}
+.display::-webkit-scrollbar{
+    width: 1px;
 }
 .numPad > div > button{
     font-family: "Roboto", sans-serif;
