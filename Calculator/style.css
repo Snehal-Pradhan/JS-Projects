@@ -109,21 +109,27 @@ body >div{
     height: 5%;
     margin:1%;
     display: flex;
-    justify-content: right;
+    justify-content:space-between;
     align-items: center;
 }
 .functionPanel>button{
     margin-right: 5px;
-    border-radius: 10px;
-    border: 2px rgba(255, 0, 0, 0.589) solid;
-    background-color: rgba(255, 0, 0, 0.078);
-    color:rgba(255, 0, 0, 0.589);
+    border-radius: 20px;
+    border: none;
+    background: none;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: inset 0px 0px  12px  rgb(32, 32, 32);
+    color:rgba(240, 240, 240, 0.589);
+    align-content:center;
     font-weight: 600;
+    transition: all 0.1s;
 }
 
 .functionPanel>button:hover{
     transform: scale(1.01);
-    background-color: rgba(255, 0, 0, 0.207);
+    background-color: rgba(255, 72, 72, 0.871);
 }
 .functionPanel>button:active{
     transform: scale(1.01);
@@ -143,3 +149,9 @@ body >div{
     border-radius: 2px;
 }
 
+.functionPanel > .text{
+    padding-left: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    color: #636b71;
+}
