@@ -61,3 +61,14 @@ body > div {
     overflow-y: scroll;
     
 }
+.updates{
+    width:8rem;
+    margin: 1rem;
+    padding-left:2rem;
+    padding-right:2rem;
+    padding-top:0.75rem;
+    padding-bottom:0.75rem;
+    border:0.5px solid gray;
+    border-radius: 4px;
+
+}
