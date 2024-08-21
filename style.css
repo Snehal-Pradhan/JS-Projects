@@ -1,0 +1,35 @@
+body{
+    display :flex;
+    background-color: blanchedalmond;
+}
+body > div {
+    margin:10px;
+    width:50vw;
+    height:90vh;
+    background-color: rgb(255, 220, 168);
+}
+
+.tile{
+    height:3rem;
+    width:3rem;
+
+}
+.panel1{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+}
+.numpad{
+    display:grid;
+    grid-template-columns:repeat(4,3rem);
+    grid-template-rows:repeat(5,3rem);
+}
+.display{
+    background-color:white;
+    height:4.8rem;
+    width:12rem;
+    margin:1rem;
+    border-radius:5px;
+}
