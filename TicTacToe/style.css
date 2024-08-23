@@ -1,0 +1,24 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0;
+    padding: 0;
+}
+.tile{
+    height: 3rem;
+    width:3rem;
+    cursor: pointer;
+    border:none;
+    background-color:antiquewhite;
+}
+.container{
+    background: none;
+    display:grid;
+    grid-template-columns: 3rem 0.05rem 3rem 0.05rem 3rem;
+    grid-template-rows: 3rem 0.05rem 3rem 0.05rem 3rem;
+}
+.line{
+    background-color: gray;
+}
