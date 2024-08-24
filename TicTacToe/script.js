@@ -4,6 +4,9 @@ const restartButton = document.querySelector('#restartButton');
 const resultDisplay = document.querySelector('#tellingTurns');
 const crossScore= document.querySelector('.cross>.score');
 const circleScore= document.querySelector('.circle>.score');
+crossScore.parentElement.style.color= '#D1C4E9';
+circleScore.parentElement.style.color= '#B388FF';
+
 // making an array 
 let PanelArr = Array(9).fill(null);
 
@@ -19,17 +22,23 @@ let gameFreezer =false;
 tile.forEach((el)=>{
    el.addEventListener('click',function(e){
       if(gameFreezer)return;
-      
+         
           if(PanelArr[el.id] !== null)return;
           resultDisplay.innerHTML=`${Playerturn(!turn)} turn`;
           el.innerHTML=Playerturn(turn);
           if (turn){
+            circleScore.parentElement.style.color= '#D1C4E9';
+            crossScore.parentElement.style.color= '#B388FF';
             PanelArr[el.id]=1;
          }
           else{
-            PanelArr[el.id]=0;
+            PanelArr[el.id]=0; 
+            crossScore.parentElement.style.color= '#D1C4E9';
+            circleScore.parentElement.style.color= '#B388FF';
+            
          }
           checkWinner();
+
           turn =! turn;
    })
 })
@@ -63,7 +72,13 @@ function checkWinner() {
       else{
          circleScore.innerHTML=parseInt(circleScore.innerHTML)+1;
       }
-         gameFreezer=true;
+      crossScore.parentElement.style.color= '#D1C4E9';
+      circleScore.parentElement.style.color= '#B388FF';
+      gameFreezer=true;
+    }
+   if(!PanelArr.some(e=>e===null)){
+      resultDisplay.innerText=`Draw`;
+      restartButton.innerText="Play Again";
     }
 };
 // win/loose and playAgain alert 
