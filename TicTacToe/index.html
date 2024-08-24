@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="scoreBoard">
+        <div class="cross">
+            <div id ="cross-icon">X</div>
+            <div class="score"></div>
+        </div>|
+        <div class="circle">
+            <div class="score"></div>
+            <div id ="circle-icon">O</div>
+        </div>
+    </div>
     <div class="container">
     <button class="tile"></button>
     <div class="line"></div>
@@ -34,7 +44,7 @@
     <div class="line"></div>
     <button class="tile"></button>
     </div>
-   
+    <button id="restartButton"><span>Restart</span><img src="./resources/restartIcon.svg" alt="" height="13"/></button>
     <script src="script.js"></script>
 </body>
 </html>

@@ -2,35 +2,25 @@
 // select elements by query selector;
 const tile = document.querySelectorAll('.tile');
 
-function tileStat() {
-   this.isChecked = false;
-   this.isCircle = false;
-   this.position = 0;
- }
-let i = 1;
-tile.forEach((e)=>{
-   const Stat = new tileStat();
-   Stat.position = i;
-   i++;
-   console.log(Stat);
-   e.addEventListener('click',()=>{
-      if(e.Stat.isChecked===false){
-         console.log(hello)
-      }
-   })
+let playGame = true;
+if(playGame){
+   introCode();
+}
+function introCode(){}
 
+let turn = true;
+tile.forEach((el)=>{
+   el.addEventListener('click',function(e){
+     el.innerHTML=Playerturn(turn);
+     turn =! turn;
+   })
 })
 
-
-// function that add elements on click 
-function addSVG(isCircle){
-   if(isCircle){
-      // circle added in dom
-   }
-   else {
-      // cross added in dom
-   }
+// changes the element to be added (X OR O) based on turn.
+function Playerturn(turn){
+   return turn ? "✖" : "O";
 }
+
 
 //funtion that checks if there are elements in a line
 
