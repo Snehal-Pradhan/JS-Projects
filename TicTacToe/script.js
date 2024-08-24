@@ -83,7 +83,3 @@ function checkWinner() {
       restartButton.innerText="Play Again";
     }
 };
-// win/loose and playAgain alert 
-function turnWriter(turn){
-   
-}
