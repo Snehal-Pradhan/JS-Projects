@@ -12,13 +12,14 @@ A minimalist Tic Tac Toe game built using HTML, CSS, and JavaScript.
 2. **Win Detection**: Checks for three aligned marks horizontally, vertically, or diagonally.
 3. **Draw Condition**: Detects when all tiles are filled with no winner.
 4. **Restart Button**: Resets the board and scores.
+
 # Colors Used in Tic Tac Toe Game
 
-| Color Name     | Hex Code   | Preview                                                      | Copy Hex Code                 |
-| -------------- | ---------- | ------------------------------------------------------------ | ----------------------------- |
-| Background     | `#5E35B1`  | ![#5E35B1](https://via.placeholder.com/15/5E35B1/5E35B1.png) | <button onclick="copyText('#5E35B1')">Copy</button> |
-| Lavender       | `#D1C4E9`  | ![#D1C4E9](https://via.placeholder.com/15/D1C4E9/D1C4E9.png) | <button onclick="copyText('#D1C4E9')">Copy</button> |
-| Violet         | `#B388FF`  | ![#B388FF](https://via.placeholder.com/15/B388FF/B388FF.png) | <button onclick="copyText('#B388FF')">Copy</button> |
+| Color Name   | Hex Code   | Preview                                                      |
+| ------------ | ---------- | ------------------------------------------------------------ |
+| Background   | `#5E35B1`  | ![#5E35B1](https://via.placeholder.com/15/5E35B1/5E35B1.png) |
+| Lavender     | `#D1C4E9`  | ![#D1C4E9](https://via.placeholder.com/15/D1C4E9/D1C4E9.png) |
+| Violet       | `#B388FF`  | ![#B388FF](https://via.placeholder.com/15/B388FF/B388FF.png) |
 
 <script>
 function copyText(hexCode) {
