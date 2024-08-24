@@ -4,6 +4,7 @@ const restartButton = document.querySelector('#restartButton');
 const resultDisplay = document.querySelector('#tellingTurns');
 const crossScore= document.querySelector('.cross>.score');
 const circleScore= document.querySelector('.circle>.score');
+const restartButtonContent = restartButton.innerHTML;
 crossScore.parentElement.style.color= '#D1C4E9';
 circleScore.parentElement.style.color= '#B388FF';
 
@@ -50,6 +51,7 @@ restartButton.addEventListener('click',function(){
    })
    resultDisplay.innerText="✖ turn";
    turn=true;
+   restartButton.innerHTML=restartButtonContent;
    gameFreezer=false;
 })
 //funtion that checks if there are elements in a line
