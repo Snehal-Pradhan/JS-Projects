@@ -70,14 +70,10 @@ body{
     align-items: center;
     border:none;
     cursor: pointer;
+    color: #D1C4E9 ;
     background-color: #5E35B1;
     margin-top: 1rem;
     transition: all 5ms ease-in;
-}
-#restartButton > span{
-    color: #D1C4E9 ;
-    font-weight: 500;
-    margin-right: 0.5rem;
 }
 #restartButton:hover{
     transform: scale(1.1);

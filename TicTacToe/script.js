@@ -4,8 +4,6 @@ const restartButton = document.querySelector('#restartButton');
 const resultDisplay = document.querySelector('#tellingTurns');
 const crossScore= document.querySelector('.cross>.score');
 const circleScore= document.querySelector('.circle>.score');
-let playGame = true;
-
 // making an array 
 let PanelArr = Array(9).fill(null);
 
@@ -36,6 +34,15 @@ tile.forEach((el)=>{
    })
 })
 
+restartButton.addEventListener('click',function(){
+   PanelArr.fill(null);
+   tile.forEach((el)=>{
+      el.innerHTML="";
+   })
+   resultDisplay.innerText="✖ turn";
+   turn=true;
+   gameFreezer=false;
+})
 //funtion that checks if there are elements in a line
 
 function checkWinner() {
