@@ -31,5 +31,7 @@ function copyText(hexCode) {
 
 ##  About Me
 I'm a developer and it is one of my early projects.
+[link to project](https://tic-tac-toe-kappa-inky.vercel.app/)
+
 
 
