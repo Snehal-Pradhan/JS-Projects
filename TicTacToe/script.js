@@ -1,45 +1,58 @@
-
 // select elements by query selector;
 const tile = document.querySelectorAll('.tile');
-
+const restartButton = document.querySelector('#restartButton');
+const resultDisplay = document.querySelector('#tellingTurns')
 let playGame = true;
-if(playGame){
-   introCode();
-}
-function introCode(){}
 
+// making an array 
+let PanelArr = Array(9).fill(null);
+
+// true for cross
 let turn = true;
-tile.forEach((el)=>{
-   el.addEventListener('click',function(e){
-     el.innerHTML=Playerturn(turn);
-     turn =! turn;
-   })
-})
 
 // changes the element to be added (X OR O) based on turn.
 function Playerturn(turn){
    return turn ? "✖" : "O";
 }
-
+let gameFreezer =false;
+//adding event listener to the tiles
+tile.forEach((el)=>{
+   el.addEventListener('click',function(e){
+      if(gameFreezer)return
+          if(PanelArr[el.id] !== null)return;
+          resultDisplay.innerHTML=`${Playerturn(!turn)} turn`;
+          el.innerHTML=Playerturn(turn);
+          if (turn){
+            PanelArr[el.id]=1;
+         }
+          else{
+            PanelArr[el.id]=0;
+         }
+          console.log(PanelArr);
+          checkWinner();
+          turn =! turn;
+   })
+})
 
 //funtion that checks if there are elements in a line
 
-function checkPanel(PanelArray){
-  //checks the array.
-
-  /*
-  123
-  456
-  789
-  147
-  258
-  369
-  357
-  159
-  */
-}
-
+function checkWinner() {
+   if (
+      (PanelArr[0] !== null && PanelArr[0] == PanelArr[1] && PanelArr[1] == PanelArr[2]) ||
+      (PanelArr[3] !== null && PanelArr[3] == PanelArr[4] && PanelArr[4] == PanelArr[5]) ||
+      (PanelArr[6] !== null && PanelArr[6] == PanelArr[7] && PanelArr[7] == PanelArr[8]) ||
+      (PanelArr[0] !== null && PanelArr[0] == PanelArr[3] && PanelArr[3] == PanelArr[6]) ||
+      (PanelArr[1] !== null && PanelArr[1] == PanelArr[4] && PanelArr[4] == PanelArr[7]) ||
+      (PanelArr[2] !== null && PanelArr[2] == PanelArr[5] && PanelArr[5] == PanelArr[8]) ||
+      (PanelArr[0] !== null && PanelArr[0] == PanelArr[4] && PanelArr[4] == PanelArr[8]) ||
+      (PanelArr[2] !== null && PanelArr[2] == PanelArr[4] && PanelArr[4] == PanelArr[6])
+    ){
+      restartButton.innerText="Play Again"
+      resultDisplay.innerText=`${Playerturn(turn)} wins!`
+      gameFreezer=true;
+    }
+};
 // win/loose and playAgain alert 
-function finalMessage(){
-
+function turnWriter(turn){
+   
 }

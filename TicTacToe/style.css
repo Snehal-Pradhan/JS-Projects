@@ -24,6 +24,8 @@ body{
     font-size: 2rem;
 }
 .container{
+    margin-top:2rem;
+    margin-bottom:2rem;
     background: none;
     display:grid;
     grid-template-columns: 6rem 0.1rem 6rem 0.1rem 6rem;
@@ -36,7 +38,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 4rem;
     height: 3rem;
     width: 20rem;
     border: 0.10rem solid  #B388FF;
@@ -58,8 +59,11 @@ body{
     width:7rem;
 }
 .score{
-    border: 2px solid;
     width: 3rem;
+}
+.cross>.score{
+    display: flex;
+    justify-content: right;
 }
 #restartButton{
     display: flex;
@@ -67,7 +71,7 @@ body{
     border:none;
     cursor: pointer;
     background-color: #5E35B1;
-    margin-top: 4rem;
+    margin-top: 1rem;
     transition: all 5ms ease-in;
 }
 #restartButton > span{
@@ -81,4 +85,13 @@ body{
 
 #restartButton:active{
     transform: translateY(-0.1rem);
+}
+
+#tellingTurns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:1rem;
+    margin-bottom: 0.5rem;
+    color:#D1C4E9;
 }
