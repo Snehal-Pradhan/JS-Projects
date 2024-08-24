@@ -1,7 +1,9 @@
 // select elements by query selector;
 const tile = document.querySelectorAll('.tile');
 const restartButton = document.querySelector('#restartButton');
-const resultDisplay = document.querySelector('#tellingTurns')
+const resultDisplay = document.querySelector('#tellingTurns');
+const crossScore= document.querySelector('.cross>.score');
+const circleScore= document.querySelector('.circle>.score');
 let playGame = true;
 
 // making an array 
@@ -18,7 +20,8 @@ let gameFreezer =false;
 //adding event listener to the tiles
 tile.forEach((el)=>{
    el.addEventListener('click',function(e){
-      if(gameFreezer)return
+      if(gameFreezer)return;
+      
           if(PanelArr[el.id] !== null)return;
           resultDisplay.innerHTML=`${Playerturn(!turn)} turn`;
           el.innerHTML=Playerturn(turn);
@@ -28,7 +31,6 @@ tile.forEach((el)=>{
           else{
             PanelArr[el.id]=0;
          }
-          console.log(PanelArr);
           checkWinner();
           turn =! turn;
    })
@@ -49,7 +51,12 @@ function checkWinner() {
     ){
       restartButton.innerText="Play Again"
       resultDisplay.innerText=`${Playerturn(turn)} wins!`
-      gameFreezer=true;
+      if(turn){crossScore.innerHTML=parseInt(crossScore.innerHTML)+1;
+      }
+      else{
+         circleScore.innerHTML=parseInt(circleScore.innerHTML)+1;
+      }
+         gameFreezer=true;
     }
 };
 // win/loose and playAgain alert 
